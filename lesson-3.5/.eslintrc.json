@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": ["simple-import-sort"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        // Tailwindcss
+        "tailwindcss/classnames-order": [
+          2,
+          {
+            "callees": ["cn", "cva", "clsx"]
+          }
+        ],
+        // Sort
+        "simple-import-sort/exports": "error",
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              // Side effects first e.g. 'server-only'
+              ["^\\u0000"],
+              // `react`, `next
+              ["^(react|next)"],
+              // Other npm libraries.
+              ["^@?\\w"],
+              // Internal packages
+              [
+                "^@/core",
+                "^@/utils",
+                "^@/hooks",
+                "^@/components",
+                "^@/providers"
+              ],
+
+              // Parent imports `..`
+              ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+              // Other relative imports '.'
+              ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
