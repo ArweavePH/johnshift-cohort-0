@@ -1,6 +1,6 @@
 # lesson 5 challenge: AO Chat
 
-- URL: [Permaweb Link 🔥](https://arweave.net/82Jv1dKxU-aHT52ygncUSuqzejSkm4PkdFMmBoLxyRY)
+- URL: [Permaweb Link 🔥](https://arweave.net/Uc350cXHuU9xXxdYW-pWASZXKToUqtnV8a3UUCJytXA)
 
 ### Features
 

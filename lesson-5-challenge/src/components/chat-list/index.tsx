@@ -92,17 +92,19 @@ export const ChatList = () => {
           </div>
         )}
 
-        {chats.reverse().map(({ id, owner, message, timestamp, file }, i) => (
-          <div key={id} ref={i === 1 ? afterScrollRef : undefined}>
-            <ChatItem
-              isEnd={owner === address}
-              owner={owner}
-              timestamp={timestamp}
-              message={message}
-              file={file}
-            />
-          </div>
-        ))}
+        {chats
+          .sort((a, b) => a.timestamp - b.timestamp)
+          .map(({ id, owner, message, timestamp, file }, i) => (
+            <div key={id} ref={i === 1 ? afterScrollRef : undefined}>
+              <ChatItem
+                isEnd={owner === address}
+                owner={owner}
+                timestamp={timestamp}
+                message={message}
+                file={file}
+              />
+            </div>
+          ))}
         <div ref={initBottomScrollRef} className="h-10" />
       </div>
     </>
