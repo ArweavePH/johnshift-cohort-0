@@ -15,7 +15,7 @@ import path from 'path';
   let data: Uint8Array;
 
   try {
-    const imagePath = path.join(__dirname, 'arweave-ph.jpeg');
+    const imagePath = path.join(__dirname, 'anon.jpg');
     const imgBuffer = await fs.readFile(imagePath);
     data = new Uint8Array(imgBuffer);
   } catch (err) {
