@@ -1,6 +1,6 @@
 # KADYUT
 
-- URL: [Permaweb Link](https://arweave.net/Uc350cXHuU9xXxdYW-pWASZXKToUqtnV8a3UUCJytXA)
+- URL: [Permaweb Link](https://arweave.net/EntO1KJcbXf0nlYk2yTYm_zD_VVaCmcoek0z9K8zLbE)
 
 ## Host
 
