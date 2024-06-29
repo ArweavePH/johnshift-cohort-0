@@ -14,3 +14,7 @@
 - Read question from host's screen
 - Select answer among choices
 - Have fun!
+
+## Limitations
+
+- Currently only desktop is supported 
